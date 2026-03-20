@@ -7,7 +7,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "london_midland_xc_central_trains_southern_strathclyde_partnership",
+          "operatorKey": "multiple",
           "displays": [
             {
               "code": "a",
@@ -274,7 +274,7 @@
         },
         {
           "class": null,
-          "operatorKey": "scotrail",
+          "operatorKey": "scr",
           "displays": [
             {
               "code": "a",
@@ -484,7 +484,8 @@
           ],
           "livery": "ScotRail"
         }
-      ]
+      ],
+      "traction": "Diesel"
     }
   ]
 }

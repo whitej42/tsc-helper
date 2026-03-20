@@ -44,7 +44,7 @@ function LocoDetailPanel({ loco, isFavourite, onToggleFavourite, onClose }) {
             />
 
             {/* Panel */}
-            <div className="fixed top-14 right-0 bottom-0 z-40 w-full sm:w-[800px] bg-white dark:bg-surface-dark-card border-l border-gray-200 dark:border-surface-dark-border flex flex-col shadow-2xl animate-slide-in-right">
+            <div className="fixed top-14 right-0 bottom-0 z-40 w-full sm:w-[500px] bg-white dark:bg-surface-dark-card border-l border-gray-200 dark:border-surface-dark-border flex flex-col shadow-2xl animate-slide-in-right">
 
                 {/* Header */}
                 <div

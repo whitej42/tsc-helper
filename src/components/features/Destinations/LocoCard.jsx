@@ -1,87 +1,7 @@
 import { FaStar, FaRegStar, FaChevronRight } from "react-icons/fa";
 
-// Each entry: { match, color, textColor?, label }
-// `match` is always lowercase. operatorKeys (snake_case) are normalised to spaces before matching.
-// Order matters — more specific patterns must precede broader ones.
-const OPERATOR_PATTERNS = [
-    // ── Long compound / multi-TOC keys ──────────────────────────
-    { match: 'lner transpennine express hull trains lumo', color: '#c8122d', label: 'LNER+' },
-    { match: 'national express east anglia',               color: '#d31933', label: 'GA' },
-    { match: 'first capital connect thameslink',           color: '#e148b4', label: 'TL' },
-    { match: 'network southeast first capital connect',    color: '#0064d9', label: 'NSE' },
-    { match: 'london midland xc',                         color: '#0d4a43', label: 'LM+' },
-    { match: 'south west trains revised',                  color: '#f39d1c', label: 'SWT' },
-    { match: 'ex network southeast',                       color: '#f39d1c', label: 'SWT' },
-    { match: 'br blue grey sc',                           color: '#0064d9', label: 'NSE' },
-    { match: 'br blue grey sw',                           color: '#003399', label: 'BR' },
-    { match: '444 south west',                            color: '#f39d1c', label: 'SWT' },
-    { match: 'white test livery',                         color: '#e8004f', label: 'Connex' },
-
-    // ── Historical / BR era ──────────────────────────────────────
-    { match: 'network southeast',                         color: '#0064d9', label: 'NSE' },
-    { match: 'br blue',                                   color: '#003399', label: 'BR' },
-    { match: 'connex',                                    color: '#e8004f', label: 'Connex' },
-    { match: 'regional railways',                         color: '#003399', label: 'RR' },
-    { match: 'central trains',                            color: '#6a0f6e', label: 'CT' },
-    { match: 'silverlink',                                color: '#86c233', label: 'SL' },
-    { match: 'midland mainline',                          color: '#492e45', label: 'MML' },
-    { match: 'anglia railways',                           color: '#d31933', label: 'AR' },
-
-    // ── South Western ────────────────────────────────────────────
-    { match: 'south west railway',                        color: '#0a90c7', label: 'SWR' },
-    { match: 'south west trains',                         color: '#f39d1c', label: 'SWT' },
-
-    // ── Southern / South Eastern ─────────────────────────────────
-    { match: 'gatwick express',                           color: '#d5081e', label: 'GX' },
-    { match: 'southeastern',                              color: '#1c234f', label: 'SE' },
-    { match: 'south eastern',                             color: '#1c234f', label: 'SE' },
-    { match: 'southern gatwick',                          color: '#d5081e', label: 'GX' },
-    { match: 'south central',                             color: '#82c446', label: 'SC' },
-    { match: 'southern',                                  color: '#82c446', label: 'Southern' },
-
-    // ── Thameslink / Great Northern ──────────────────────────────
-    { match: 'thameslink',                                color: '#e148b4', label: 'TL' },
-    { match: 'first capital connect',                     color: '#e148b4', label: 'FCC' },
-    { match: 'great northern',                            color: '#411659', label: 'GN' },
-
-    // ── Eastern ─────────────────────────────────────────────────
-    { match: 'greater anglia',                            color: '#d31933', label: 'GA' },
-    { match: 'great eastern',                             color: '#d31933', label: 'GE' },
-    { match: 'lner',                                      color: '#c8122d', label: 'LNER' },
-    { match: 'london north eastern',                      color: '#c8122d', label: 'LNER' },
-    { match: 'hull trains',                               color: '#00326f', label: 'Hull' },
-    { match: 'grand central',                             color: '#e87916', label: 'GC' },
-    { match: 'lumo',                                      color: '#0000ea', label: 'Lumo' },
-
-    // ── Great Western ────────────────────────────────────────────
-    { match: 'great western',                             color: '#0a473c', label: 'GWR' },
-
-    // ── Cross Country / Midlands ─────────────────────────────────
-    { match: 'cross country',                             color: '#d01846', label: 'XC' },
-    { match: 'east midlands',                             color: '#492e45', label: 'EMR' },
-    { match: 'london midland',                            color: '#0d4a43', label: 'LM' },
-    { match: 'west midlands',                             color: '#f77f00', label: 'WMT' },
-    { match: 'avanti',                                    color: '#1f4352', label: 'Avanti' },
-    { match: 'chiltern',                                  color: '#1196ce', label: 'CR' },
-
-    // ── Northern / Scotland / Wales ──────────────────────────────
-    { match: 'transpennine',                              color: '#8b7fb7', label: 'TPE' },
-    { match: 'northern',                                  color: '#222e5c', label: 'Northern' },
-    { match: 'scotrail',                                  color: '#14377b', label: 'ScotRail' },
-    { match: 'transport for wales',                       color: '#f70000', label: 'TfW' },
-    { match: 'arriva trains wales',                       color: '#f70000', label: 'ATW' },
-
-    // ── Others ───────────────────────────────────────────────────
-    { match: 'c2c',                                       color: '#b9238f', label: 'c2c' },
-    { match: 'heathrow express',                          color: '#4f2c5e', label: 'HEx' },
-    { match: 'merseyrail',                                color: '#f7ea00', label: 'Merseyrail', textColor: '#000' },
-    { match: 'island line',                               color: '#389cd2', label: 'IL' },
-    { match: 'london overground',                         color: '#ef7b10', label: 'LO' },
-    { match: 'london underground',                        color: '#e32119', label: 'LU' },
-];
-
-// Direct map for short abbreviation keys (checked before substring patterns).
 const ABBREV = {
+    'awc':      { color: '#204353', label: 'AWC' },
     'tl':       { color: '#e148b4', label: 'TL' },
     'gn':       { color: '#411659', label: 'GN' },
     'swt':      { color: '#f39d1c', label: 'SWT' },
@@ -91,15 +11,17 @@ const ABBREV = {
     'rr':       { color: '#003399', label: 'RR' },
     'gwr':      { color: '#0a473c', label: 'GWR' },
     'fgw':      { color: '#0a473c', label: 'FGW' },
-    'ct':       { color: '#6a0f6e', label: 'CT' },
-    'emt':      { color: '#492e45', label: 'EMR' },
+    'fcc':      { color: '#e21765', label: 'FCC' },
+    'ct':       { color: '#67b62f', label: 'CT' },
+    'emt':      { color: '#53364f', label: 'EMR' },
     'nr':       { color: '#222e5c', label: 'Northern' },
-    'tpe':      { color: '#8b7fb7', label: 'TPE' },
+    'tpe':      { color: '#9085be', label: 'TPE' },
     'scr':      { color: '#14377b', label: 'ScotRail' },
     'sil':      { color: '#86c233', label: 'SL' },
     'nse':      { color: '#0064d9', label: 'NSE' },
     'br':       { color: '#003399', label: 'BR' },
-    'atw':      { color: '#f70000', label: 'ATW' },
+    'tfw':      { color: '#f70000', label: 'TFW' },
+    'atw':      { color: '#148193', label: 'ATW' },
     'xc':       { color: '#d01846', label: 'XC' },
     'gx':       { color: '#d5081e', label: 'GX' },
     'ga':       { color: '#d31933', label: 'GA' },
@@ -109,21 +31,15 @@ const ABBREV = {
     'cr':       { color: '#1196ce', label: 'CR' },
     'wmt':      { color: '#f77f00', label: 'WMT' },
     'c2c':      { color: '#b9238f', label: 'c2c' },
-    'multiple': { color: '#6b7280', label: 'Multiple' },
+    'con':      { color: '#c19321', label: 'Connex' },
+    'xc':       { color: '#c4164a', label: 'Cross Country' },
 };
 
-// Resolves any operatorKey — short abbreviations, snake_case, or full names.
 export function getOperatorStyle(name) {
-    const key = name.toLowerCase();
-    if (ABBREV[key]) {
-        const m = ABBREV[key];
-        return { color: m.color, textColor: m.textColor || '#fff', label: m.label };
-    }
-    const lower = name.replace(/_/g, ' ').toLowerCase();
-    const found = OPERATOR_PATTERNS.find(p => lower.includes(p.match));
-    return found
-        ? { color: found.color, textColor: found.textColor || '#fff', label: found.label }
-        : { color: '#6b7280', textColor: '#fff', label: name.replace(/_/g, ' ').split(/[\s/–-]/)[0].toUpperCase() };
+    const m = ABBREV[name.toLowerCase()];
+    return m
+        ? { color: m.color, textColor: m.textColor || '#fff', label: m.label }
+        : { color: '#6b7280', textColor: '#fff', label: name.toUpperCase() };
 }
 
 export const PUBLISHER_CONFIG = {
@@ -137,7 +53,7 @@ export function getPublisher(name) {
     return PUBLISHER_CONFIG[name] || { color: '#6B7280', label: 'Unknown' };
 }
 
-function LocoCard({ loco, isFavourite, onToggleFavourite, onSelect, isSelected }) {
+function LocoCard({ loco, isFavourite, onToggleFavourite, onSelect, isSelected, showOperators = true }) {
     const pub = getPublisher(loco.publisher);
     const variants = loco.trainVariants ?? [];
     const allOperators = [...new Set(variants.map(v => v.operatorKey))].sort();
@@ -162,7 +78,7 @@ function LocoCard({ loco, isFavourite, onToggleFavourite, onSelect, isSelected }
                 </span>
 
                 <button
-                    onClick={(e) => { e.stopPropagation(); onToggleFavourite(loco.name); }}
+                    onClick={(e) => { e.stopPropagation(); onToggleFavourite(loco.key); }}
                     aria-label={isFavourite ? 'Remove from favourites' : 'Add to favourites'}
                     className="shrink-0 -mt-1 -mr-1 w-10 h-10 flex items-center justify-center rounded-rail hover:bg-gray-100 dark:hover:bg-surface-dark-alt transition-colors text-xl"
                 >
@@ -184,7 +100,7 @@ function LocoCard({ loco, isFavourite, onToggleFavourite, onSelect, isSelected }
             </div>
 
             {/* Operator tags */}
-            {allOperators.length > 0 && (
+            {showOperators && allOperators.length > 0 && (
                 <div className="px-4 pb-3 flex flex-wrap gap-1">
                     {allOperators.slice(0, 4).map(op => {
                         const style = getOperatorStyle(op);

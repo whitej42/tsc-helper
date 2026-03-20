@@ -7,8 +7,8 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "unspecified",
-          "livery": "Unspecified",
+          "operatorKey": "White",
+          "livery": "White",
           "displays": [
             {
               "code": "A",
@@ -142,7 +142,8 @@
             }
           ]
         }
-      ]
+      ],
+      "traction": "Electric"
     },
     {
       "key": "dtg_class377",
@@ -151,7 +152,7 @@
       "trainVariants": [
         {
           "class": "375",
-          "operatorKey": "southeastern",
+          "operatorKey": "se",
           "displays": [
             {
               "code": "a",
@@ -413,7 +414,7 @@
         },
         {
           "class": "377",
-          "operatorKey": "southern",
+          "operatorKey": "sn",
           "displays": [
             {
               "code": "a",
@@ -680,7 +681,7 @@
         },
         {
           "class": "377",
-          "operatorKey": "first_capital_connect",
+          "operatorKey": "fcc",
           "displays": [
             {
               "code": "a",
@@ -817,7 +818,7 @@
         },
         {
           "class": "378",
-          "operatorKey": "london_overground",
+          "operatorKey": "lo",
           "displays": [
             {
               "code": "a",
@@ -952,7 +953,8 @@
           ],
           "livery": "London Overground"
         }
-      ]
+      ],
+      "traction": "Electric"
     },
     {
       "key": "dtg_class350",
@@ -961,7 +963,7 @@
       "trainVariants": [
         {
           "class": "350",
-          "operatorKey": "london_midland",
+          "operatorKey": "lm",
           "displays": [
             {
               "code": "01",
@@ -1168,7 +1170,7 @@
         },
         {
           "class": "360",
-          "operatorKey": "great_eastern_mainline",
+          "operatorKey": "ga",
           "displays": [
             {
               "code": "A",
@@ -1305,7 +1307,7 @@
         },
         {
           "class": "450",
-          "operatorKey": "_444_south_west_trains",
+          "operatorKey": "swt",
           "displays": [
             {
               "code": "01",
@@ -1680,7 +1682,8 @@
           ],
           "livery": "South West Trains"
         }
-      ]
+      ],
+      "traction": "Electric"
     },
     {
       "key": "dtg_class455",
@@ -1689,7 +1692,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "south_west_trains",
+          "operatorKey": "swt",
           "displays": [
             {
               "code": "a",
@@ -1954,7 +1957,8 @@
           ],
           "livery": "South West Trains"
         }
-      ]
+      ],
+      "traction": "Electric"
     },
     {
       "key": "dtg_class220",
@@ -1963,7 +1967,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "cross_country",
+          "operatorKey": "xc",
           "displays": [
             {
               "code": "A",
@@ -2098,7 +2102,8 @@
           ],
           "livery": "Cross Country"
         }
-      ]
+      ],
+      "traction": "Diesel"
     },
     {
       "key": "dtg_class221",
@@ -2107,7 +2112,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "avanti_west_coast",
+          "operatorKey": "awc",
           "displays": [
             {
               "code": "A",
@@ -2322,7 +2327,8 @@
           ],
           "livery": "Avanti West Coast"
         }
-      ]
+      ],
+      "traction": "Diesel"
     },
     {
       "key": "dtg_class319",
@@ -2331,7 +2337,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "first_capital_connect",
+          "operatorKey": "fcc",
           "displays": [
             {
               "code": "a",
@@ -2466,7 +2472,8 @@
           ],
           "livery": "First Capital Connect"
         }
-      ]
+      ],
+      "traction": "Electric"
     },
     {
       "key": "dtg_class365",
@@ -2475,7 +2482,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "first_capital_connect",
+          "operatorKey": "fcc",
           "displays": [
             {
               "code": "a",
@@ -2610,7 +2617,8 @@
           ],
           "livery": "First Capital Connect"
         }
-      ]
+      ],
+      "traction": "Electric"
     },
     {
       "key": "dtg_class321",
@@ -2619,7 +2627,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "first_capital_connect",
+          "operatorKey": "fcc",
           "displays": [
             {
               "code": "A",
@@ -2754,7 +2762,8 @@
           ],
           "livery": "First Capital Connect"
         }
-      ]
+      ],
+      "traction": "Electric"
     },
     {
       "key": "dtg_class175",
@@ -2763,7 +2772,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "arriva_trains_wales",
+          "operatorKey": "atw",
           "displays": [
             {
               "code": "a",
@@ -3030,7 +3039,7 @@
         },
         {
           "class": null,
-          "operatorKey": "transport_for_wales",
+          "operatorKey": "tfw",
           "displays": [
             {
               "code": "a",
@@ -3255,7 +3264,8 @@
           ],
           "livery": "Transport for Wales"
         }
-      ]
+      ],
+      "traction": "Diesel"
     },
     {
       "key": "dtg_class158",
@@ -3264,7 +3274,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "first_great_western",
+          "operatorKey": "fgw",
           "displays": [
             {
               "code": "A",
@@ -3401,7 +3411,7 @@
         },
         {
           "class": null,
-          "operatorKey": "arriva_trains_wales",
+          "operatorKey": "atw",
           "displays": [
             {
               "code": "A",
@@ -3538,7 +3548,7 @@
         },
         {
           "class": null,
-          "operatorKey": "transport_for_wales",
+          "operatorKey": "tfw",
           "displays": [
             {
               "code": "A",
@@ -3678,7 +3688,8 @@
           ],
           "livery": "Transport for Wales"
         }
-      ]
+      ],
+      "traction": "Diesel"
     },
     {
       "key": "dtg_class143",
@@ -3687,7 +3698,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "arriva_trains_wales",
+          "operatorKey": "atw",
           "displays": [
             {
               "code": "A",
@@ -3824,7 +3835,7 @@
         },
         {
           "class": null,
-          "operatorKey": "first_great_western",
+          "operatorKey": "fgw",
           "displays": [
             {
               "code": "A",
@@ -3959,7 +3970,8 @@
           ],
           "livery": "First Great Western"
         }
-      ]
+      ],
+      "traction": "Diesel"
     },
     {
       "key": "dtg_class442",
@@ -3968,7 +3980,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "gatwick_express",
+          "operatorKey": "gx",
           "displays": [
             {
               "code": "A",
@@ -4023,7 +4035,8 @@
           ],
           "livery": "Gatwick Express"
         }
-      ]
+      ],
+      "traction": "Electric"
     },
     {
       "key": "dtg_class465",
@@ -4032,7 +4045,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "southeastern",
+          "operatorKey": "se",
           "displays": [
             {
               "code": "a",
@@ -4297,7 +4310,8 @@
           ],
           "livery": "Southeastern"
         }
-      ]
+      ],
+      "traction": "Electric"
     },
     {
       "key": "dtg_class395",
@@ -4306,7 +4320,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "southeastern",
+          "operatorKey": "se",
           "displays": [
             {
               "code": "a",
@@ -4416,7 +4430,8 @@
           ],
           "livery": "Southeastern"
         }
-      ]
+      ],
+      "traction": "Electric"
     }
   ]
 }

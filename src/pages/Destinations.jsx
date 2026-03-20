@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
-import { FaSearch, FaStar } from "react-icons/fa";
+import { FaSearch, FaStar, FaTag } from "react-icons/fa";
 import { useLocos } from "../hooks/useLocos";
 import LocoCard from "../components/features/Destinations/LocoCard";
 import LocoDetailPanel from "../components/features/Destinations/LocoDetailPanel";
@@ -19,7 +19,8 @@ function Destinations() {
     const [search, setSearch]         = useState('');
     const [selectedLoco, setSelected] = useState(null);
     const [favourites, setFavourites] = useState(loadFavourites);
-    const [showFavsOnly, setShowFavsOnly] = useState(false);
+    const [showFavsOnly, setShowFavsOnly]   = useState(false);
+    const [showOperators, setShowOperators] = useState(true);
 
     // Persist favourites
     useEffect(() => {
@@ -103,6 +104,18 @@ function Destinations() {
                         </span>
                     )}
                 </button>
+
+                <button
+                    onClick={() => setShowOperators(p => !p)}
+                    className={`flex items-center gap-2 px-4 py-2.5 rounded-card border text-sm font-bold tracking-rail uppercase transition-colors ${
+                        showOperators
+                            ? 'border-gray-200 dark:border-surface-dark-border bg-white dark:bg-surface-dark-card text-gray-500 dark:text-gray-400 hover:border-gray-400 dark:hover:border-gray-500'
+                            : 'border-gray-400 dark:border-gray-500 bg-gray-100 dark:bg-surface-dark-alt text-gray-700 dark:text-gray-300'
+                    }`}
+                >
+                    <FaTag />
+                    {showOperators ? 'Hide Operators' : 'Show Operators'}
+                </button>
             </div>
 
             {/* ── Results count ────────────────────────────────────── */}
@@ -121,6 +134,7 @@ function Destinations() {
                             onToggleFavourite={toggleFavourite}
                             onSelect={handleSelect}
                             isSelected={selectedLoco?.key === loco.key}
+                            showOperators={showOperators}
                         />
                     ))}
                 </div>

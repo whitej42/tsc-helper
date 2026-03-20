@@ -7,7 +7,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "east_midlands_trains",
+          "operatorKey": "emt",
           "displays": [
             {
               "code": "01",
@@ -117,7 +117,8 @@
           ],
           "livery": "East Midlands Trains"
         }
-      ]
+      ],
+      "traction": "Diesel"
     },
     {
       "key": "jt_classlus8",
@@ -126,7 +127,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "london_underground",
+          "operatorKey": "lu",
           "displays": [
             {
               "code": "1",
@@ -176,7 +177,8 @@
           ],
           "livery": "London Underground"
         }
-      ]
+      ],
+      "traction": "Electric"
     }
   ]
 }

@@ -20,7 +20,7 @@ function HomeGrid() {
                 <Link
                     key={item.id}
                     to={item.to}
-                    className="group block bg-white dark:bg-surface-dark-card rounded-card shadow-card hover:shadow-card-hover dark:shadow-dark-card dark:hover:shadow-dark-card-hover transition-all duration-200 hover:-translate-y-1 overflow-hidden border border-gray-200 dark:border-surface-dark-border"
+                    className="group flex flex-col bg-white dark:bg-surface-dark-card rounded-card shadow-card hover:shadow-card-hover dark:shadow-dark-card dark:hover:shadow-dark-card-hover transition-all duration-200 hover:-translate-y-1 overflow-hidden border border-gray-200 dark:border-surface-dark-border"
                     style={{ borderLeftColor: item.accent, borderLeftWidth: '4px' }}
                 >
                     {/* Image */}
@@ -47,7 +47,7 @@ function HomeGrid() {
 
                     {/* Accent bar on hover */}
                     <div
-                        className="h-0.5 w-0 group-hover:w-full transition-all duration-300"
+                        className="mt-auto h-1 w-0 group-hover:w-full transition-all duration-300"
                         style={{ backgroundColor: item.accent }}
                     />
                 </Link>
