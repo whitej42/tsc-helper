@@ -1306,7 +1306,7 @@
           "livery": "Great Eastern Mainline"
         },
         {
-          "class": "450",
+          "class": "444/450",
           "operatorKey": "swt",
           "displays": [
             {
