@@ -10,6 +10,7 @@ import Headcodes from './pages/Headcodes';
 import Status from './pages/Status';
 import Guides from './pages/Guides';
 import About from './pages/About';
+import NotFound from './pages/NotFound';
 
 function App() {
   const [isDark, setIsDark] = useState(() => {
@@ -49,6 +50,7 @@ function App() {
             <Route path="/status"       element={<Status />} />
             <Route path="/guides"       element={<Guides />} />
             <Route path="/about"        element={<About />} />
+            <Route path="*"             element={<NotFound />} />
           </Routes>
         </main>
 
