@@ -1,8 +1,14 @@
+import { Helmet } from 'react-helmet-async';
 import { FaBook } from "react-icons/fa";
 
 function Guides() {
     return (
         <div className="w-full max-w-4xl mx-auto px-4 py-8">
+            <Helmet>
+                <title>Guides | TSCHelper</title>
+                <meta name="description" content="Tips, notes, and guides for Train Simulator Classic scenario builders." />
+                <link rel="canonical" href="https://tschelper.co.uk/guides" />
+            </Helmet>
             <div className="mb-8">
                 <h1 className="font-rail font-bold text-3xl sm:text-4xl tracking-tight text-rail-navy dark:text-white border-b-4 border-rail-red pb-2 inline-block">
                     Guides

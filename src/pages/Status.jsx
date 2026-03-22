@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import LineStatusList from "../components/features/LineStatus/LineStatusList";
 import { SiTransportforlondon, SiNationalrail } from "react-icons/si";
 import { IoMdBoat } from "react-icons/io";
@@ -9,6 +10,11 @@ const river_api = "https://api.tfl.gov.uk/Line/Mode/river-bus/Status";
 function Status() {
     return (
         <div className="w-full max-w-3xl mx-auto px-6 py-10">
+            <Helmet>
+                <title>Live Status | TSCHelper</title>
+                <meta name="description" content="Real-time TfL and National Rail service status. Tube, Overground, Elizabeth line, DLR, and National Rail — all in one place." />
+                <link rel="canonical" href="https://tschelper.co.uk/status" />
+            </Helmet>
             {/* Page heading */}
             <div className="mb-10">
                 <h1 className="font-rail font-bold text-3xl sm:text-4xl tracking-tight text-rail-navy dark:text-white border-b-4 border-rail-red pb-2 inline-block">

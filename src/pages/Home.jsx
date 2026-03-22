@@ -1,9 +1,15 @@
+import { Helmet } from 'react-helmet-async';
 import HomeGrid from "../components/layout/HomeGrid/HomeGrid";
 import { Link } from 'react-router-dom';
 
 function Home() {
     return (
         <div className="flex flex-col">
+            <Helmet>
+                <title>TSCHelper | Train Simulator Classic Scenario Helper</title>
+                <meta name="description" content="Destination codes, headcode generation, and live UK rail status. Everything you need to build authentic Train Simulator Classic scenarios." />
+                <link rel="canonical" href="https://tschelper.co.uk/" />
+            </Helmet>
             {/* ── Hero ─────────────────────────────────────────────── */}
             <section className="bg-gray-900 dark:bg-gray-950">
                 <div className="max-w-4xl mx-auto px-6 py-16 sm:py-22 flex flex-col items-center text-center gap-5">

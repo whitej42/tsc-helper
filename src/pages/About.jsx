@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { FaCheckCircle, FaClock, FaExternalLinkAlt } from "react-icons/fa";
 
 const features = [
@@ -55,6 +56,11 @@ function Section({ children, className = "" }) {
 function About() {
     return (
         <div className="w-full max-w-3xl mx-auto px-6 py-10">
+            <Helmet>
+                <title>About | TSCHelper</title>
+                <meta name="description" content="TSCHelper is a free tool for Train Simulator Classic scenario builders. Built by James — a train nerd who got fed up hunting for destination codes." />
+                <link rel="canonical" href="https://tschelper.co.uk/about" />
+            </Helmet>
 
             {/* Hero */}
             <div className="mb-12">

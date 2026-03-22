@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState, useMemo, useEffect } from "react";
 import { FaSearch, FaStar, FaTag } from "react-icons/fa";
 import { useLocos } from "../hooks/useLocos";
@@ -62,6 +63,11 @@ function Destinations() {
 
     return (
         <div className="w-full max-w-7xl mx-auto px-6 py-10">
+            <Helmet>
+                <title>Destination Codes | TSCHelper</title>
+                <meta name="description" content="Browse destination board codes for all Train Simulator Classic locomotive classes. Filter by class, save favourites, and look up codes fast." />
+                <link rel="canonical" href="https://tschelper.co.uk/destinations" />
+            </Helmet>
             {/* ── Page heading ─────────────────────────────────────── */}
             <div className="mb-10">
                 <h1 className="font-rail font-bold text-3xl sm:text-4xl tracking-tight text-rail-navy dark:text-white border-b-4 border-rail-red pb-2 inline-block">
