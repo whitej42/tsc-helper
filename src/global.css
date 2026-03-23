@@ -11,6 +11,11 @@
 /* ── Base link reset (Tailwind doesn't strip these) ──────── */
 a { text-decoration: none; color: inherit; }
 
+/* ── Detail panel offset — shift left when a pinned panel is open ── */
+@media (min-width: 640px) {
+    .panel-offset { right: 500px; }
+}
+
 /* ── LineStatus frozen components — force readable text ───── */
 /* Colours.css overrides this for light-background lines (circle, victoria, etc.) */
 .line-name,

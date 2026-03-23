@@ -19,6 +19,7 @@ function Destinations() {
     const { locos, loading, error } = useLocos();
     const [search, setSearch]         = useState('');
     const [selectedLoco, setSelected] = useState(null);
+    const [pinnedLoco, setPinned]     = useState(null);
     const [favourites, setFavourites] = useState(loadFavourites);
     const [showFavsOnly, setShowFavsOnly]   = useState(false);
     const [showOperators, setShowOperators] = useState(true);
@@ -44,10 +45,14 @@ function Destinations() {
     }, [locos, search, favourites, showFavsOnly]);
 
     const handleSelect = (loco) => {
+        if (pinnedLoco?.key === loco.key) return; // already shown as pinned
         setSelected(prev => prev?.key === loco.key ? null : loco);
     };
 
-    const handleClose = () => setSelected(null);
+    const handleClose    = () => setSelected(null);
+    const handleClosePin = () => { setPinned(null); setSelected(null); };
+    const handlePin      = () => { setPinned(selectedLoco); setSelected(null); };
+    const handleUnpin    = () => { setPinned(null); setSelected(null); };
 
     if (loading) return (
         <div className="flex items-center justify-center py-40 text-gray-400 dark:text-gray-500">
@@ -139,7 +144,7 @@ function Destinations() {
                             isFavourite={favourites.includes(loco.key)}
                             onToggleFavourite={toggleFavourite}
                             onSelect={handleSelect}
-                            isSelected={selectedLoco?.key === loco.key}
+                            isSelected={selectedLoco?.key === loco.key || pinnedLoco?.key === loco.key}
                             showOperators={showOperators}
                         />
                     ))}
@@ -155,13 +160,29 @@ function Destinations() {
                 </div>
             )}
 
-            {/* ── Detail panel ─────────────────────────────────────── */}
+            {/* ── Detail panels ────────────────────────────────────── */}
+            {pinnedLoco && (
+                <LocoDetailPanel
+                    loco={pinnedLoco}
+                    isFavourite={favourites.includes(pinnedLoco.key)}
+                    onToggleFavourite={toggleFavourite}
+                    onClose={handleClosePin}
+                    isPinned={true}
+                    onUnpin={handleUnpin}
+                    offsetPanel={false}
+                    showOverlay={!selectedLoco}
+                />
+            )}
             {selectedLoco && (
                 <LocoDetailPanel
                     loco={selectedLoco}
                     isFavourite={favourites.includes(selectedLoco.key)}
                     onToggleFavourite={toggleFavourite}
                     onClose={handleClose}
+                    isPinned={false}
+                    onPin={handlePin}
+                    offsetPanel={!!pinnedLoco}
+                    showOverlay={true}
                 />
             )}
         </div>

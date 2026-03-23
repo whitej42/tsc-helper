@@ -1,7 +1,8 @@
 /* Line Status */
 .status-container {
-  min-width: 800px;
+  width: 100%;
   max-width: 800px;
+  margin: 0 auto;
   border-top: solid 2px #808080;
   padding: 1em;
 }
@@ -39,6 +40,7 @@
 
 .status {
   display: flex;
+  flex-wrap: wrap;
   border-top: solid 1px #808080;
 }
 
@@ -47,12 +49,14 @@
 }
 
 .line-name {
-  flex: 50%;
+  flex: 1 1 50%;
+  min-width: 120px;
   padding: 10px;
 }
 
 .line-status {
-  flex: 40%;
+  flex: 1 1 40%;
+  min-width: 120px;
   padding: 10px;
 }
 

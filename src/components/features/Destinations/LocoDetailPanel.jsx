@@ -1,8 +1,18 @@
 import { useState, useMemo, useEffect, Fragment } from "react";
-import { FaTimes, FaStar, FaRegStar, FaBook } from "react-icons/fa";
+import { FaTimes, FaStar, FaRegStar, FaBook, FaThumbtack } from "react-icons/fa";
 import { getPublisher, getOperatorStyle } from "./LocoCard";
 
-function LocoDetailPanel({ loco, isFavourite, onToggleFavourite, onClose }) {
+function LocoDetailPanel({
+    loco,
+    isFavourite,
+    onToggleFavourite,
+    onClose,
+    isPinned = false,
+    onPin = null,
+    onUnpin = null,
+    offsetPanel = false,
+    showOverlay = true,
+}) {
     const pub = getPublisher(loco.publisher);
 
     // Unique operators, sorted alphabetically by display label
@@ -38,13 +48,15 @@ function LocoDetailPanel({ loco, isFavourite, onToggleFavourite, onClose }) {
     return (
         <>
             {/* Overlay */}
-            <div
-                onClick={onClose}
-                className="fixed inset-0 z-30 bg-black/50 lg:hidden animate-fade-in"
-            />
+            {showOverlay && (
+                <div
+                    onClick={onClose}
+                    className="fixed inset-0 z-30 bg-black/50 lg:hidden animate-fade-in"
+                />
+            )}
 
             {/* Panel */}
-            <div className="fixed top-14 right-0 bottom-0 z-40 w-full sm:w-[500px] bg-white dark:bg-surface-dark-card border-l border-gray-200 dark:border-surface-dark-border flex flex-col shadow-2xl animate-slide-in-right">
+            <div className={`fixed top-14 right-0 bottom-0 w-full sm:w-[500px] bg-white dark:bg-surface-dark-card border-l border-gray-200 dark:border-surface-dark-border flex flex-col shadow-2xl animate-slide-in-right ${offsetPanel ? 'z-50 panel-offset' : 'z-40'}`}>
 
                 {/* Header */}
                 <div
@@ -66,6 +78,17 @@ function LocoDetailPanel({ loco, isFavourite, onToggleFavourite, onClose }) {
                     </div>
 
                     <div className="flex items-center gap-2 shrink-0 mt-1">
+                        <button
+                            onClick={isPinned ? onUnpin : onPin}
+                            aria-label={isPinned ? 'Unpin panel' : 'Pin panel'}
+                            className={`flex items-center justify-center w-8 h-8 rounded-rail hover:bg-gray-100 dark:hover:bg-surface-dark-alt transition-colors text-base ${
+                                isPinned
+                                    ? 'text-rail-red'
+                                    : 'text-gray-400 dark:text-gray-500 hover:text-gray-700 dark:hover:text-white'
+                            }`}
+                        >
+                            <FaThumbtack />
+                        </button>
                         {loco.manual_url && (
                             <a
                                 href={loco.manual_url}
