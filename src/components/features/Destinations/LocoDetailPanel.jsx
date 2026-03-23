@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, Fragment } from "react";
-import { FaTimes, FaStar, FaRegStar } from "react-icons/fa";
+import { FaTimes, FaStar, FaRegStar, FaBook } from "react-icons/fa";
 import { getPublisher, getOperatorStyle } from "./LocoCard";
 
 function LocoDetailPanel({ loco, isFavourite, onToggleFavourite, onClose }) {
@@ -66,6 +66,17 @@ function LocoDetailPanel({ loco, isFavourite, onToggleFavourite, onClose }) {
                     </div>
 
                     <div className="flex items-center gap-2 shrink-0 mt-1">
+                        {loco.manual_url && (
+                            <a
+                                href={loco.manual_url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Open manual"
+                                className="flex items-center justify-center w-8 h-8 rounded-rail hover:bg-gray-100 dark:hover:bg-surface-dark-alt transition-colors text-base text-gray-400 dark:text-gray-500 hover:text-gray-700 dark:hover:text-white"
+                            >
+                                <FaBook />
+                            </a>
+                        )}
                         <button
                             onClick={() => onToggleFavourite(loco.key)}
                             aria-label={isFavourite ? 'Remove from favourites' : 'Add to favourites'}
