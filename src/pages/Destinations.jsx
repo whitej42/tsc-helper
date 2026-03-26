@@ -55,8 +55,11 @@ function Destinations() {
     const handleUnpin    = () => { setPinned(null); setSelected(null); };
 
     if (loading) return (
-        <div className="flex items-center justify-center py-40 text-gray-400 dark:text-gray-500">
-            Loading…
+        <div className="flex flex-col items-center justify-center py-40 gap-3">
+            <div className="w-8 h-8 border-2 border-rail-navy dark:border-rail-amber border-t-transparent rounded-full animate-spin" />
+            <span className="text-xs font-bold tracking-rail uppercase text-gray-400 dark:text-gray-500">
+                Loading…
+            </span>
         </div>
     );
 
@@ -79,8 +82,7 @@ function Destinations() {
                     Destination Codes
                 </h1>
                 <p className="text-gray-500 dark:text-gray-400 text-base mt-3">
-                    Select a locomotive class to view its destination board codes.
-                    More to come soon....
+                    Select a class to view its destination board codes.
                 </p>
             </div>
 

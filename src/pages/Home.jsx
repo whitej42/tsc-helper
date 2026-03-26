@@ -25,11 +25,25 @@ function Home() {
                         Destination codes, headcode generation, and live network status.
                         Everything you need to build authentic UK rail scenarios.
                     </p>
+                    <div className="flex flex-wrap items-center justify-center gap-3 mb-3">
+                        <Link
+                            to="/destinations"
+                            className="inline-flex items-center justify-center font-rail font-bold tracking-rail uppercase text-sm bg-rail-amber text-rail-navy rounded-rail px-4 py-2 hover:bg-rail-amber-dark transition-colors"
+                        >
+                            Destination Codes
+                        </Link>
+                        <Link
+                            to="/headcodes"
+                            className="inline-flex items-center justify-center font-rail font-bold tracking-rail uppercase text-sm text-white border border-white/30 rounded-rail px-4 py-2 hover:bg-white/10 transition-colors"
+                        >
+                            Headcode Generator
+                        </Link>
+                    </div>
                     <Link
                         to="/about"
-                        className="inline-flex items-center justify-center font-rail font-bold tracking-rail uppercase text-sm text-rail-amber border border-rail-amber rounded-rail px-3 py-1.5 hover:bg-rail-amber hover:text-rail-navy transition-colors mb-3"
+                        className="text-xs text-white/30 hover:text-white/60 transition-colors font-rail tracking-rail uppercase"
                     >
-                        About This Site
+                        About this site
                     </Link>
                 </div>
             </section>

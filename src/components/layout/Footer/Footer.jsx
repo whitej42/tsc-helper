@@ -6,7 +6,7 @@ function Footer() {
                 <div className="flex-1" style={{ backgroundColor: '#0072CE' }} />
                 <div className="flex-1" style={{ backgroundColor: '#A2AAAD' }} />
             </div>
-            <div className="w-full px-20 py-4 flex flex-col sm:flex-row items-center gap-2">
+            <div className="w-full px-4 sm:px-12 py-4 flex flex-col sm:flex-row items-center gap-2">
                 <p className="flex-1 text-left font-rail font-bold tracking-rail uppercase text-xs text-white/40">
                     Train Simulator Classic · Scenario Helper
                 </p>

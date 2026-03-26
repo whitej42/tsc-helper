@@ -235,6 +235,18 @@ function HeadcodeGenerator() {
                                 <div className="font-mono text-5xl sm:text-6xl font-bold tracking-board text-rail-amber">
                                     {headcode}
                                 </div>
+                                <button
+                                    type="button"
+                                    onClick={() => copyToClipboard(headcode)}
+                                    className={`mt-4 inline-flex items-center gap-2 text-xs font-bold tracking-rail uppercase rounded-rail px-3 py-1.5 transition-colors ${
+                                        copied === headcode
+                                            ? 'bg-green-500/20 text-green-400'
+                                            : 'bg-white/10 text-white/50 hover:bg-white/20 hover:text-white'
+                                    }`}
+                                >
+                                    <FaCopy className="text-[11px]" />
+                                    {copied === headcode ? 'Copied!' : 'Copy'}
+                                </button>
                                 {regenHint && (
                                     <p className="text-xs text-white/40 mt-3 leading-snug">{regenHint}</p>
                                 )}
