@@ -1,16 +1,16 @@
-# TSCHelper
+# TSCTools
 
 A side project for Train Simulator Classic scenario builders.
 
-TSCHelper is built to make Train Simulator Classic scenario building a little less painful. In one place you'll find destination board codes, a headcode generator, route and line information, and a live TfL and National Rail status board. Everything you'd otherwise spend forty minutes hunting across six different forum threads and a PDF from 2009.
+TSCTools is built to make Train Simulator Classic scenario building a little less painful. In one place you'll find destination board codes, a headcode generator, route and line information, and a live TfL and National Rail status board. Everything you'd otherwise spend forty minutes hunting across six different forum threads and a PDF from 2009.
 
-**[tscscenario.co.uk](https://tscscenario.co.uk)**
+**[tsctools.co.uk](https://tsctools.co.uk)**
 
 ---
 
 ## Features
 
-- **Destination Codes** — Look up destination board codes by locomotive class. No more cross-referencing spreadsheets, forum posts, or that one wiki page that hasn't been updated since 2014.
+- **Destination Boards** — Look up destination board codes by locomotive class. No more cross-referencing spreadsheets, forum posts, or that one wiki page that hasn't been updated since 2014.
 - **Headcode Generator** — Generate authentic UK rail headcodes for your services. Gets the format right so you don't have to think about it.
 - **Live Status Board** — Real-time TfL and National Rail service status. Technically useful for scenario inspiration. Mostly just fun to have.
 - **Routes** *(coming soon)* — Browse route and line information to help build more believable services.
@@ -32,7 +32,7 @@ No promises, no roadmap, no board. Just a list of things I'd like to build event
 
 ## A note on UK-centricity
 
-Yes, this site is entirely focused on UK rail. The destination codes, the headcodes, the routes, the live status — all of it is very much a British problem for British trains. It is a .co.uk site, so really you were warned at the URL.
+Yes, this site is entirely focused on UK rail. The destination board codes, the headcodes, the routes, the live status — all of it is very much a British problem for British trains. It is a .co.uk site, so really you were warned at the URL.
 
 ---
 

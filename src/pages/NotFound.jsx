@@ -6,7 +6,7 @@ function NotFound() {
     return (
         <>
             <Helmet>
-                <title>404 — Page Not Found | TSCHelper</title>
+                <title>404 — Page Not Found | TSCTools</title>
                 <meta name="robots" content="noindex" />
             </Helmet>
             <div className="flex flex-col items-center justify-center flex-1 px-6 py-24 text-center">

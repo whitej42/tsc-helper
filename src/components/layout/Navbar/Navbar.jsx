@@ -12,7 +12,7 @@ const river_api = "https://api.tfl.gov.uk/Line/Mode/river-bus/Status";
 
 const navLinks = [
     { to: '/',             label: 'Home' },
-    { to: '/destinations', label: 'Destination Codes' },
+    { to: '/destinations', label: 'Destination Boards' },
     { to: '/headcodes',    label: 'Headcode Generator' },
     { to: '/lines',        label: 'Routes' },
     { to: '/guides',       label: 'Guides' },
@@ -51,8 +51,8 @@ function Navbar({ isDark, toggleTheme }) {
                     to="/"
                     className="flex-1 text-center font-rail font-bold tracking-rail text-white uppercase text-lg px-2 leading-none"
                 >
-                    <span className="hidden sm:inline">Train Simulator Classic · Scenario Helper</span>
-                    <span className="sm:hidden">TSC · Scenario Helper</span>
+                    <span className="hidden sm:inline">Train Simulator Classic · Scenario Tools</span>
+                    <span className="sm:hidden">TSC · Scenario Tools</span>
                 </Link>
 
                 {/* Dark mode toggle */}

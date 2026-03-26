@@ -55,8 +55,11 @@ function Destinations() {
     const handleUnpin    = () => { setPinned(null); setSelected(null); };
 
     if (loading) return (
-        <div className="flex items-center justify-center py-40 text-gray-400 dark:text-gray-500">
-            Loading…
+        <div className="flex flex-col items-center justify-center py-40 gap-3">
+            <div className="w-8 h-8 border-2 border-rail-navy dark:border-rail-amber border-t-transparent rounded-full animate-spin" />
+            <span className="text-xs font-bold tracking-rail uppercase text-gray-400 dark:text-gray-500">
+                Loading…
+            </span>
         </div>
     );
 
@@ -69,18 +72,17 @@ function Destinations() {
     return (
         <div className="w-full max-w-7xl mx-auto px-6 py-10">
             <Helmet>
-                <title>Destination Codes | TSCHelper</title>
+                <title>Destination Boards | TSCTools</title>
                 <meta name="description" content="Browse destination board codes for all Train Simulator Classic locomotive classes. Filter by class, save favourites, and look up codes fast." />
-                <link rel="canonical" href="https://tscscenario.co.uk/destinations" />
+                <link rel="canonical" href="https://tsctools.co.uk/destinations" />
             </Helmet>
             {/* ── Page heading ─────────────────────────────────────── */}
             <div className="mb-10">
                 <h1 className="font-rail font-bold text-3xl sm:text-4xl tracking-tight text-rail-navy dark:text-white border-b-4 border-rail-red pb-2 inline-block">
-                    Destination Codes
+                    Destination Boards
                 </h1>
                 <p className="text-gray-500 dark:text-gray-400 text-base mt-3">
-                    Select a locomotive class to view its destination board codes.
-                    More to come soon....
+                    Select a class to view its destination board codes.
                 </p>
             </div>
 

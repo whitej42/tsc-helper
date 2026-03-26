@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tscscenario.co.uk//</loc>
+    <loc>https://tsctools.co.uk//</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://tscscenario.co.uk//destinations</loc>
+    <loc>https://tsctools.co.uk//destinations</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://tscscenario.co.uk//headcodes</loc>
+    <loc>https://tsctools.co.uk//headcodes</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tscscenario.co.uk//status</loc>
+    <loc>https://tsctools.co.uk//status</loc>
     <priority>0.7</priority>
     <changefreq>always</changefreq>
   </url>
   <url>
-    <loc>https://tscscenario.co.uk//lines</loc>
+    <loc>https://tsctools.co.uk//lines</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tscscenario.co.uk//guides</loc>
+    <loc>https://tsctools.co.uk//guides</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://tscscenario.co.uk//about</loc>
+    <loc>https://tsctools.co.uk//about</loc>
     <priority>0.4</priority>
     <changefreq>monthly</changefreq>
   </url>

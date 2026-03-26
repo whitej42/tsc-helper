@@ -3,7 +3,7 @@ import { FaCheckCircle, FaClock, FaExternalLinkAlt } from "react-icons/fa";
 
 const features = [
     {
-        title: "Destination Codes",
+        title: "Destination Boards",
         desc: "Look up destination board codes by locomotive class. No more cross-referencing spreadsheets, forum posts, or that one wiki page that hasn't been updated since 2014.",
         future: false,
     },
@@ -57,16 +57,16 @@ function About() {
     return (
         <div className="w-full max-w-3xl mx-auto px-6 py-10">
             <Helmet>
-                <title>About | TSCHelper</title>
-                <meta name="description" content="TSCHelper is a free tool for Train Simulator Classic scenario builders. Built by James — a train nerd who got fed up hunting for destination codes." />
-                <link rel="canonical" href="https://tscscenario.co.uk/about" />
+                <title>About | TSCTools</title>
+                <meta name="description" content="TSCTools is a free tool for Train Simulator Classic scenario builders. Built by James — a train nerd who got fed up hunting for destination board codes." />
+                <link rel="canonical" href="https://tsctools.co.uk/about" />
             </Helmet>
 
             {/* Hero */}
             <div className="mb-12">
                 <div className="flex items-center gap-3 mb-4">
                     <h1 className="font-rail font-bold text-3xl sm:text-4xl tracking-tight text-rail-navy dark:text-white border-b-4 border-rail-red pb-2 inline-block">
-                        About TSCHelper
+                        About TSCTools
                     </h1>
                 </div>
                 <p className="text-gray-500 dark:text-gray-400 text-base">
@@ -90,7 +90,7 @@ function About() {
                 <SectionHeading>What is this place?</SectionHeading>
                 <div className="space-y-4 text-gray-700 dark:text-gray-300 text-base leading-relaxed">
                     <p>
-                        TSCHelper is a side project built to make Train Simulator Classic scenario
+                        TSCTools is a side project built to make Train Simulator Classic scenario
                         building a little less painful. In one place you'll find destination board
                         codes, a headcode generator, route and line information, and a live TfL and
                         National Rail status board. Everything you'd otherwise spend forty minutes
@@ -141,11 +141,11 @@ function About() {
                     </p>
                     <p>
                         I got fed up of the same routine every time I started a new scenario. I'd
-                        open a browser, search for destination codes, dig out the route manuals,
+                        open a browser, search for destination board codes, dig out the route manuals,
                         find three conflicting sources, give up, make something up, feel quietly
                         guilty about it for the rest of the session. Multiply that by however
                         many services a scenario needs and it gets old fast. I'm maybe a little
-                        OCD about getting the destination codes right. Okay, very OCD.
+                        OCD about getting the destination board codes right. Okay, very OCD.
                     </p>
                     <p>
                         I also wanted to actually learn some proper frontend development. 
@@ -159,7 +159,7 @@ function About() {
                 <SectionHeading>A note on UK-centricity</SectionHeading>
                 <div className="space-y-4 text-gray-700 dark:text-gray-300 text-base leading-relaxed">
                     <p>
-                        Yes, this site is entirely focused on UK rail. The destination codes, the
+                        Yes, this site is entirely focused on UK rail. The destination board codes, the
                         headcodes, the routes, the live status — all of it is very much a British
                         problem for British trains. I could apologise for this, but it is a .co.uk
                         site, so really you were warned at the URL.
@@ -197,7 +197,7 @@ function About() {
                         If something's wrong, missing, or broken genuinely do let me know. This is
                         a one person show built in stolen hours, so bugs happen and coverage has
                         gaps. I'd rather fix it than have you quietly suffer through incorrect
-                        destination codes.
+                        destination board codes.
                     </p>
                     <p>
                         And if you're building something brilliant in TSC, I'd love to hear about it.
