@@ -5,7 +5,7 @@ import Footer from './components/layout/Footer/Footer';
 
 import Home from './pages/Home';
 import Destinations from './pages/Destinations';
-import Lines from './pages/Lines';
+import Lines from './pages/Routes';
 import Headcodes from './pages/Headcodes';
 import Status from './pages/Status';
 import Guides from './pages/Guides';
@@ -45,7 +45,7 @@ function App() {
           <Routes>
             <Route path="/"             element={<Home />} />
             <Route path="/destinations" element={<Destinations />} />
-            <Route path="/lines"        element={<Lines />} />
+            <Route path="/routes"        element={<Lines />} />
             <Route path="/headcodes"    element={<Headcodes />} />
             <Route path="/status"       element={<Status />} />
             <Route path="/guides"       element={<Guides />} />

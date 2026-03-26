@@ -1,0 +1,139 @@
+[
+  {
+    "lineName": "Brighton Main Line",
+    "abbreviation": "BML",
+    "lines": [
+      {
+        "name": "Brighton Main Line",
+        "color": "#65a30d",
+        "stations": ["VIC","BAK","CLJ","WSW","BAL","SRC","NRB","TTH","SRS","ECR","PUO","PUR","CDS","MHM","ELD","SAF","BAB","HHE","WVF","BUG","HSK","PRP","BTN"]
+      }
+    ]
+  },
+  {
+    "lineName": "Chatham Main Line",
+    "abbreviation": "CML",
+    "lines": [
+      {
+        "name": "Chatham Main Line",
+        "color": "#242b57",
+        "stations": ["VIC","WWR","CLP","BRX","HNH","WDU","SYH","PNE","KTH","BFJ","BKL","FNR","LGF","MEP","RTR","GLM","NGT","SIT","FAV"]
+      },
+      {
+        "name": "Blackfriars Branch",
+        "color": "#242b57",
+        "stations": ["BFR","EPH","LGJ"],
+        "branchFrom": "HNH"
+      },
+      {
+        "name": "Orpington Branch",
+        "color": "#242b57",
+        "stations": ["PET","ORP"],
+        "branchFrom": "BKL"
+      },
+      {
+        "name": "Catford Loop",
+        "color": "#242b57",
+        "stations": ["DMK","NHD","CFT","CTF","BGM","BEC","RVB","SRT"],
+        "branchFrom": "BRX"
+      },
+      {
+        "name": "Sheerness Branch",
+        "color": "#242b57",
+        "stations": ["KML","SWL","QBR","SSS"],
+        "branchFrom": "SIT"
+      },
+      {
+        "name": "Ramsgate via Margate",
+        "color": "#242b57",
+        "stations": ["WHI","CSW","HNB","BCH","WGA","MAR","BSR","RAM"],
+        "branchFrom": "FAV"
+      },
+      {
+        "name": "Dover via Canterbury",
+        "color": "#242b57",
+        "stations": ["SEG","DMP","CBE","BKS","ADM","AYH","SWO","SPH","KSN","DVP"],
+        "branchFrom": "FAV"
+      }
+    ]
+  },
+  {
+    "lineName": "Great Eastern Main Line",
+    "abbreviation": "GEML",
+    "lines": [
+      {
+        "name": "Great Eastern Main Line",
+        "color": "#C8102E",
+        "stations": ["LST","SRA","MYL","FOG","MNP","IFD","SVK","GMY","CTH","RMF","GDP","HRO","BRE","SNF","INT","CHM","HAP","WTM","KEL","MKT","COL","MNG","IPS"]
+      },
+      {
+        "name": "Braintree Branch",
+        "color": "#C8102E",
+        "stations": ["WNY","CES","BTP","BTR"],
+        "branchFrom": "WTM"
+      },
+      {
+        "name": "Colchester Branch",
+        "color": "#C8102E",
+        "stations": ["CET"],
+        "branchFrom": "COL"
+      },
+      {
+        "name": "Felixstowe Branch",
+        "color": "#C8102E",
+        "stations": ["WFI","DBR","TRM","FLX"],
+        "branchFrom": "IPS"
+      }
+    ]
+  },
+  {
+    "lineName": "Portsmouth Direct Line",
+    "abbreviation": "PDL",
+    "lines": [
+      {
+        "name": "Portsmouth Direct Line",
+        "color": "#7c3aed",
+        "stations": ["WAT","VXH","QRB","CLJ","EAD","WIM","RAY","NEM","BRS","SUR","ESH","HER","WAL","BFN","WBY","WOK"]
+      },
+      {
+        "name": "Hampton Court Branch",
+        "color": "#7c3aed",
+        "stations": ["THD","HMC"],
+        "branchFrom": "SUR"
+      }
+    ]
+  },
+  {
+    "lineName": "Watford DC Line",
+    "abbreviation": "WATDC",
+    "lines": [
+      {
+        "name": "Watford DC Line",
+        "color": "#ffa600",
+        "stations": ["EUS","SOH","KBN","QPW","KNL","WIJ","HDN","SBP","WMB","NWB","SOK","KNT","HRW","HDL","HTE","CPK","BSH","WFH","WFJ"],
+      }
+    ]
+  },
+  {
+    "lineName": "West Coast Main Line South",
+    "abbreviation": "WCML-S",
+    "lines": [
+      {
+        "name": "West Coast Main Line South",
+        "color": "#08524b",
+        "stations": ["EUS","WMB","BSH","WFJ","KGL","APS","HML","BKM","TRI","CED","LBZ","BLY","MKC","WOL","RUG","COV","CNL","THL","BKW","HIA","BHI","MGN","LEH","SCF","ADD","BHM"]
+      }
+    ]
+  },
+  {
+    "lineName": "WCML Trent Valley Line",
+    "abbreviation": "WCML-TV",
+    "lines": [
+      {
+        "name": "WCML Trent Valley Line",
+        "color": "#08524b",
+        "stations": ["RUG","NUN","ATH","PSW","TAM","LTV","RGL","STA"]
+      }
+    ]
+  }
+]
