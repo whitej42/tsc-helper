@@ -11,6 +11,28 @@
     ]
   },
   {
+    "lineName": "East Coast Main Line",
+    "abbreviation": "ECML",
+    "lines": [
+      {
+        "name": "East Coast Main Line",
+        "color": "#ce0e2d",
+        "stations": ["FPK","HGY","HRN","AAP","NSG","OKL","NBA","HDW","PBR","BPK","WMG","HAT","WGC","WLW","KBW","SVG","HIT","ARL","BIW","SDY","SNO","HUN","PBO"]
+      }
+    ]
+  },
+  {
+    "lineName": "Midland Main Line South",
+    "abbreviation": "MMLS",
+    "lines": [
+      {
+        "name": "Midland Main Line South",
+        "color": "#e950bb",
+        "stations": ["STP","KTN","WHP","CRI","HEN","MIL","ELS","RDT","SAC","HPD","LTN","LUT","LEA","HLN","FLT","BDM"]
+      }
+    ]
+  },
+  {
     "lineName": "Chatham Main Line",
     "abbreviation": "CML",
     "lines": [
