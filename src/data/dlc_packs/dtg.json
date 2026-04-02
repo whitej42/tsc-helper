@@ -41,6 +41,48 @@
         "name": "Great Eastern Main Line",
         "store_url": "https://store.steampowered.com/app/222593/Train_Simulator_Great_Eastern_Main_Line_LondonIpswich_Route_AddOn",
         "routes": ["GEML"]
-    }
+    },
+    {
+        "id": "dt_south_western_mainline",
+        "name": "South Western Main Line",
+        "store_url": "https://store.steampowered.com/app/1055333/Train_Simulator_South_Western_Main_Line_Southampton__Bournemouth_Route_AddOn/",
+        "routes": ["SWML"]
+     },
+     {
+        "id": "dt_midland_mainline_south",
+        "name": "Midland Main Line London - Bedford",
+        "store_url": "https://store.steampowered.com/app/277760/Train_Simulator_Midland_Main_Line_LondonBedford_Route_AddOn/",
+        "routes": ["MMLS"]
+     },
+     {
+        "id": "dt_east_coast_south",
+        "name": "East Coast Main Line London - Peterborough",
+        "store_url": "https://store.steampowered.com/app/222618/Train_Simulator_East_Coast_Main_Line_LondonPeterborough_Route_AddOn/",
+        "routes": ["ECML"]
+     },
+     {
+        "id": "dt_east_coast_york",
+        "name": "East Coast Main Line Peterborough - York",
+        "store_url": "https://store.steampowered.com/app/678004/Train_Simulator_East_Coast_Main_Line_Modern_York__Peterborough_Route_AddOn/",
+        "routes": ["ECML"]
+     },
+     {
+        "id": "dt_east_coast_middle",
+        "name": "East Coast Main Line York - Newcastle",
+        "store_url": "https://store.steampowered.com/app/208303/Train_Simulator_East_Coast_Main_Line_Route_AddOn/",
+        "routes": ["ECML"]
+     },
+     {
+        "id": "dt_east_coast_north",
+        "name": "East Coast Main Line Newcastle - Edinburgh",
+        "store_url": "https://store.steampowered.com/app/1211478/Train_Simulator_ECML_North_Newcastle__Edinburgh_Route_AddOn/",
+        "routes": ["ECML"]
+     },
+     {
+        "id": "dt_edinburgh_glasgow_line",
+        "name": "East Coast Main Line",
+        "store_url": "https://store.steampowered.com/app/222618/Train_Simulator_East_Coast_Main_Line_LondonPeterborough_Route_AddOn/",
+        "routes": ["ECML"]
+     }
   ]
 }

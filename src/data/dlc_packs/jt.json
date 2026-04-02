@@ -1,0 +1,16 @@
+{
+  "just_trains": [
+    {
+      "id": "jt_western_mainlines",
+      "name": "Western Mainlines",
+      "store_url": "https://www.justtrains.net/product/western-mainlines",
+      "routes": ["GWML", "BEXL", "SWSML", "CWVL", "RTL"]
+    },
+    {
+        "id": "jt_oxford_bicester_line",
+        "name": "Western Mainlines Oxford to Bicester Extension",
+        "store_url": "https://www.justtrains.net/product/western-mainlines-oxford-bicester-extension",
+        "routes": ["CWVL"]
+    }
+  ]
+}

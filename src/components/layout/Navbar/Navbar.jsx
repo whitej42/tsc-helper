@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes, FaMoon, FaSun, FaTrain } from "react-icons/fa";
+import { FaBars, FaTimes, FaMoon, FaSun } from "react-icons/fa";
 import { SiTransportforlondon, SiNationalrail } from "react-icons/si";
 import { IoMdBoat } from "react-icons/io";
 import SidebarStatus from "../../features/LineStatus/SidebarStatus";

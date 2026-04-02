@@ -17,7 +17,7 @@
       {
         "name": "East Coast Main Line",
         "color": "#ce0e2d",
-        "stations": ["FPK","HGY","HRN","AAP","NSG","OKL","NBA","HDW","PBR","BPK","WMG","HAT","WGC","WLW","KBW","SVG","HIT","ARL","BIW","SDY","SNO","HUN","PBO"]
+        "stations": ["FPK","HGY","HRN","AAP","NSG","OKL","NBA","HDW","PBR","BPK","WMG","HAT","WGC","WLW","KBW","SVG","HIT","ARL","BIW","SDY","SNO","HUN","PBO","GRA","NNG","RET","DON","YRK","THI","NTR","DAR","DHM","CLS","NCL","MAS","CRM","MPT","PEG","WDD","ACK","ALM","CHT","BWK","RSN","DUN","ELT","DRM","LND","PST","WAF","MUB","EDB"]
       }
     ]
   },
@@ -115,7 +115,7 @@
       {
         "name": "Portsmouth Direct Line",
         "color": "#7c3aed",
-        "stations": ["WAT","VXH","QRB","CLJ","EAD","WIM","RAY","NEM","BRS","SUR","ESH","HER","WAL","BFN","WBY","WOK"]
+        "stations": ["WAT","VXH","QRB","CLJ","EAD","WIM","RAY","NEM","BRS","SUR","ESH","HER","WAL","BFN","WBY","WOK","WPL","GLD","FNC","GOD","MLF","WTY","HSL","LIP","LIS","PTR","RLN","HAV","BDH","HLS","FTN","PMS","PMH"]
       },
       {
         "name": "Hampton Court Branch",
@@ -165,7 +165,7 @@
       {
         "name": "Great Western Main Line",
         "color": "#08473c",
-        "stations": ["PAD","AML","EAL","WEA","HAN","STL","HAY","WDT","LNY","SLO","BNM","TAP","MAI","TWY","RDG","TLH","PAN","GOR","CHO","DID","SWI","CPM","BTH","KYN","BRI"]
+        "stations": ["PAD","AML","EAL","WEA","HAN","STL","HAY","WDT","LNY","SLO","BNM","TAP","MAI","TWY","RDG","TLH","PAN","GOR","CHO","DID","SWI","CPM","BTH","OLF","KYN","BRI"]
       }
     ]
   },
@@ -216,6 +216,68 @@
         "color": "#08473c",
         "stations": ["FIT","SRD","LWH","BRI"],
         "branchFrom": "BPW"
+      },
+      {
+        "name": "Severn Beach Line",
+        "color": "#08473c",
+        "stations": ["MTP","RDA","CFN","SML","SHH","PRI","AVN","SAR","SVB"],
+        "branchFrom": "BRI"
+      }
+    ]
+  },
+  {
+    "lineName": "Reading to Taunton Line",
+    "abbreviation": "RTL",
+    "lines": [
+      {
+        "name": "Reading to Taunton Line",
+        "color": "#08473c",
+        "stations": ["RDG","THE","AMT","MDG","THA","NRC","NBY","KIT","HGD","BDW","PEW","WSB","FRO","BRU","CLC","TAU"]
+      }
+    ]
+  },
+  {
+    "lineName": "Wessex Main Line",
+    "abbreviation": "WSX",
+    "lines": [
+      {
+        "name": "Wessex Main Line",
+        "color": "#08473c",
+        "stations": ["WSB","TRO","BOA","AVF","FFD","BTH","OLF","KYN","BRI"]
+      },
+      {
+        "name": "Salisbury Extension",
+        "color": "#08473c",
+        "stations": ["SOU","MBK","RDB","ROM","DBG","DEN","SAL"],
+        "branchFrom": "SOU"
+      }
+    ]
+  },
+  {
+    "lineName": "Cherwell Valley Line",
+    "abbreviation": "CWVL",
+    "lines": [
+      {
+        "name": "Cherwell Valley Line",
+        "color": "#08473c",
+        "stations": ["DID","APF","CUM","RAD","OXF"]
+      },
+      {
+        "name": "Oxford–Bicester line",
+        "color": "#08473c",
+        "stations": ["OXP","ISP","BIT"],
+        "branchFrom": "OXF"
+      }
+    ]
+  },
+  {
+    "lineName": "Welsh Marshes Line",
+    "abbreviation": "WML",
+    "lines": [
+      {
+        "name": "Welsh Marshes Line",
+        "color": "#088192",
+        "stations": ["NWP","CWM","PPL","AGV","HFD","LEO","LUD","CRV","CTT","SHR"]
       }
     ]
   },
@@ -228,6 +290,103 @@
         "color": "#00a4eb",
         "stations": ["LDS","COT","MLY","BTL","DEW","MIR","DHN","HUD","SWT","MSL","SYB","AHN","GUI","MCV"]
       }
+    ]
+  },
+  {
+    "lineName": "Birmingham Cross-City Line",
+    "abbreviation": "BCC",
+    "lines": [
+      {
+        "name": "Birmingham Cross-City Line",
+        "color": "#64b53a",
+        "stations": ["LTV","LIC","SEN","BKT","BUL","FOK","SUT","WYL","CRD","ERD","GVH","AST","DUD","BHM","FWY","UNI","SLY","BRV","KNN","NFD","LOB","BTG","BMV"]
+      },
+      {
+        "name": "Redditch Branch",
+        "color": "#64b53a",
+        "stations": ["ALV","RDC"],
+        "branchFrom": "BTG"
+      }
+    ]
+  },
+  {
+    "lineName": "South Western Main Line",
+    "abbreviation": "SWML",
+    "lines": [
+      {
+        "name": "South Western Main Line",
+        "color": "#0796c9",
+        "stations": ["SDN","SOU","MBK","RDB","TTN","ANF","BEU","BCU","SWY","NWM","HNA","CHR","POK","BMH"]
+      },
+      {
+        "name": "Lymington Branch",
+        "color": "#0796c9",
+        "stations": ["LYT","LYP"],
+        "branchFrom": "BCU"
+      }
+    ]
+  },
+  {
+    "lineName": "North Clyde Line",
+    "abbreviation": "NCYL",
+    "lines": [
+      {
+        "name": "North Clyde Line",
+        "color": "#273566",
+        "stations": ["GLQ","CHC","PTK","HYN","JOR","SCH","GRS","YOK","CYK","DMR","KPT","BWG","DBE","DBC","DLR","CDR","CGD","HLC"]
+      },
+      {
+        "name": "Ballock Branch",
+        "color": "#273566",
+        "stations": ["RTN","ALX","BHC"],
+        "branchFrom": "DLR"
+      },
+      {
+        "name": "Anniesland Branch",
+        "color": "#273566",
+        "stations": ["SIN","DMY","DMC","WES","ANL","HYN","PTK"],
+        "branchFrom": "DMR"
+      },
+      {
+        "name": "Milngaive Branch",
+        "color": "#273566",
+        "stations": ["BRN","HLF","MLN"],
+        "branchFrom": "WES"
+      },
+      {
+        "name": "Maryhill Line",
+        "color": "#273566",
+        "stations": ["KVD","MYH","SUM","GSC","PPK","ASF","GLQ"],
+        "branchFrom": "ANL"
+      },
+      {
+        "name": "Springburn Branch",
+        "color": "#273566",
+        "stations": ["HST","BLG","DST","AXP","BNL","SPR","ASF"],
+        "branchFrom": "GLQ"
+      }
+    ]
+  },
+  {
+    "lineName": "Edinburgh to Glasgow via Falkirk Line",
+    "abbreviation": "EGFK",
+    "lines": [
+      {
+        "name": "Edinburgh to Glasgow",
+        "color": "#273566",
+        "stations": ["EDB","HYM","EDP","LIN","PMT","FKK","CRO","LNZ","BBG","GLQ"]
+     }
+    ]
+  },
+  {
+    "lineName": "Fife Circle Line",
+    "abbreviation": "FCL",
+    "lines": [
+      {
+        "name": "Fife Circle Line",
+        "color": "#273566",
+        "stations": ["EDB","HYM","SGL","EGY","DAM","NQU","INK","DAG","AUR","BTS","KGH","KDY","GLT","CDD","LCG","COW","DFL","DFE","ROS","INK"]
+     }
     ]
   }
 ]

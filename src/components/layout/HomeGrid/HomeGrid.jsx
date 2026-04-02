@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import dest      from '../../../assets/images/dest-board.png';
-import headcodes from '../../../assets/images/headcode.png';
-import routes    from '../../../assets/images/routes.png';
-import status    from '../../../assets/images/status.png';
-import guides    from '../../../assets/images/guides.png';
+import dest      from '../../../assets/images/homegrid/dest-board.png';
+import headcodes from '../../../assets/images/homegrid/headcode.png';
+import routes    from '../../../assets/images/homegrid/routes.png';
+import status    from '../../../assets/images/homegrid/status.png';
+import guides    from '../../../assets/images/homegrid/guides.png';
 
 const items = [
     { id: 1, title: 'Destination Boards',  to: '/destinations', imgSrc: dest,       accent: '#F5A623', sub: 'Look up destination board codes by locomotive class' },

@@ -3,7 +3,7 @@ import RouteMap from '../components/features/RouteMap/RouteMap';
 
 function Lines() {
     return (
-        <div className="flex-1 flex flex-col min-h-0">
+        <div className="h-[calc(100vh-3.5rem)] flex flex-col">
             <Helmet>
                 <title>Routes | TSCTools</title>
                 <meta name="description" content="Browse UK rail route and line information to help build more believable Train Simulator Classic scenarios." />

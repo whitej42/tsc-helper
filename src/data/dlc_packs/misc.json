@@ -1,0 +1,10 @@
+{
+  "suburban_glasgow": [
+    {
+      "id": "sg_clyde_northwest",
+      "name": "Suburban Glasgow Northwest: Springburn - Helensburgh",
+      "store_url": "https://store.steampowered.com/app/1364036/Train_Simulator_Suburban_Glasgow_Northwest_Springburn__Helensburgh_Route_AddOn/",
+      "routes": ["NCYL"]
+    }
+  ]
+}
