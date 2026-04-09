@@ -6,3 +6,6 @@ help: # Show help for each of the Makefile recipes.
 
 run:
 	npm start
+
+route-builder:
+	node scripts/route-builder.js

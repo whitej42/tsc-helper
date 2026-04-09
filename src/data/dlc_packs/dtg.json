@@ -4,13 +4,19 @@
       "id": "dt_wcml_south",
       "name": "West Coast Main Line South",
       "store_url": "https://store.steampowered.com/app/1364033/Train_Simulator_WCML_South_London_Euston__Birmingham_Route_AddOn",
-      "routes": ["WCMLS", "WATDC"]
+      "routes": ["WCML", "WATDC"]
     },
     {
         "id": "dt_wcml_trent_valley_line",
         "name": "WCML Trent Valley Line",
         "store_url": "https://store.steampowered.com/app/325954/Train_Simulator_WCML_Trent_Valley_Route_AddOn",
-        "routes": ["WCMLTV"]
+        "routes": ["WCML"]
+    },
+    {
+        "id": "dt_wcml_north",
+        "name": "WCML North",
+        "store_url": "https://store.steampowered.com/app/24083/Train_Simulator_West_Coast_Main_Line_North_Route_AddOn/",
+        "routes": ["WCML"]
     },
     {
       "id": "dt_brighton_mainline",
@@ -45,44 +51,74 @@
     {
         "id": "dt_south_western_mainline",
         "name": "South Western Main Line",
-        "store_url": "https://store.steampowered.com/app/1055333/Train_Simulator_South_Western_Main_Line_Southampton__Bournemouth_Route_AddOn/",
+        "store_url": "https://store.steampowered.com/app/1055333/Train_Simulator_South_Western_Main_Line_Southampton__Bournemouth_Route_AddOn",
         "routes": ["SWML"]
      },
      {
         "id": "dt_midland_mainline_south",
         "name": "Midland Main Line London - Bedford",
-        "store_url": "https://store.steampowered.com/app/277760/Train_Simulator_Midland_Main_Line_LondonBedford_Route_AddOn/",
+        "store_url": "https://store.steampowered.com/app/277760/Train_Simulator_Midland_Main_Line_LondonBedford_Route_AddOn",
         "routes": ["MMLS"]
      },
      {
         "id": "dt_east_coast_south",
         "name": "East Coast Main Line London - Peterborough",
-        "store_url": "https://store.steampowered.com/app/222618/Train_Simulator_East_Coast_Main_Line_LondonPeterborough_Route_AddOn/",
+        "store_url": "https://store.steampowered.com/app/222618/Train_Simulator_East_Coast_Main_Line_LondonPeterborough_Route_AddOn",
         "routes": ["ECML"]
      },
      {
         "id": "dt_east_coast_york",
         "name": "East Coast Main Line Peterborough - York",
-        "store_url": "https://store.steampowered.com/app/678004/Train_Simulator_East_Coast_Main_Line_Modern_York__Peterborough_Route_AddOn/",
+        "store_url": "https://store.steampowered.com/app/678004/Train_Simulator_East_Coast_Main_Line_Modern_York__Peterborough_Route_AddOn",
         "routes": ["ECML"]
      },
      {
         "id": "dt_east_coast_middle",
         "name": "East Coast Main Line York - Newcastle",
-        "store_url": "https://store.steampowered.com/app/208303/Train_Simulator_East_Coast_Main_Line_Route_AddOn/",
+        "store_url": "https://store.steampowered.com/app/208303/Train_Simulator_East_Coast_Main_Line_Route_AddOn",
         "routes": ["ECML"]
      },
      {
         "id": "dt_east_coast_north",
         "name": "East Coast Main Line Newcastle - Edinburgh",
-        "store_url": "https://store.steampowered.com/app/1211478/Train_Simulator_ECML_North_Newcastle__Edinburgh_Route_AddOn/",
+        "store_url": "https://store.steampowered.com/app/1211478/Train_Simulator_ECML_North_Newcastle__Edinburgh_Route_AddOn",
         "routes": ["ECML"]
      },
      {
-        "id": "dt_edinburgh_glasgow_line",
-        "name": "East Coast Main Line",
-        "store_url": "https://store.steampowered.com/app/222618/Train_Simulator_East_Coast_Main_Line_LondonPeterborough_Route_AddOn/",
-        "routes": ["ECML"]
+        "id": "dt_liverpool_manchester_line",
+        "name": "Liverpool to Manchester via Warrington",
+        "store_url": "https://store.steampowered.com/app/258653/Train_Simulator_LiverpoolManchester_Route_AddOn",
+        "routes": ["LMLW"]
+     },
+     {
+         "id": "dt_edinburgh_glasgow_falkirk_line",
+         "name": "Edinburgh to Glasgow via Falkirk",
+         "store_url": "https://store.steampowered.com/app/65216/Train_Simulator_EdinburghGlasgow_Route_AddOn",
+         "routes": ["EGFK"]
+     },
+     {
+         "id": "dt_welsh_marshes_line",
+         "name": "Welsh Marches Line - Newport to Shrewsbury",
+         "store_url": "https://store.steampowered.com/app/1230279/Train_Simulator_Welsh_Marches_Newport__Shrewsbury_Route_AddOn",
+         "routes": ["WMSL"]
+     },
+     {
+         "id": "dt_medway_valley_line",
+         "name": "Welsh Marches Line - Shrewsbury to Crewe",
+         "store_url": "https://store.steampowered.com/app/677960/Train_Simulator_Chatham_Main__Medway_Valley_Lines_Route_AddOn",
+         "routes": ["MEDW"]
+     },
+     {
+         "id": "dt_island_line",
+         "name": "Island Line",
+         "store_url": "https://store.steampowered.com/app/24021/Train_Simulator_Isle_of_Wight_Route_AddOn",
+         "routes": ["IOWL"]
+     },
+     {
+         "id": "dt_birmingham_cross_city_line",
+         "name": "Birmingham Cross City Line",
+         "store_url": "https://store.steampowered.com/app/1515063/Train_Simulator_Birmingham_Cross_City_Line_Lichfield__Bromsgrove__Redditch_Route_AddOn/",
+         "routes": ["BCC"]
      }
   ]
 }

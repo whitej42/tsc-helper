@@ -1,0 +1,10 @@
+{
+  "armstrong_powerhouse": [
+        {
+        "id": "ats_chat_moss",
+        "name": "Wherry Lines - Norwich to Great Yarmouth & Lowestoft",
+        "store_url": "https://www.armstrongpowerhouse.com/wherry_lines_norwich_to_great_yarmouth_lowestoft_route_2.0",
+        "routes": ["WHYL"]
+        }
+    ]
+}

@@ -3,7 +3,7 @@
  * Station Picker — click stations on a map to build a CRS array.
  *
  * Usage:
- *   node scripts/station-picker.js
+ *   node scripts/route-builder.js
  *
  * Then open http://localhost:3333 in your browser.
  */

@@ -4,13 +4,31 @@
       "id": "jt_western_mainlines",
       "name": "Western Mainlines",
       "store_url": "https://www.justtrains.net/product/western-mainlines",
-      "routes": ["GWML", "BEXL", "SWSML", "CWVL", "RTL"]
+      "routes": ["GWML", "BEXL", "SWSML", "CWVL", "RTL", "WSX"]
     },
     {
         "id": "jt_oxford_bicester_line",
         "name": "Western Mainlines Oxford to Bicester Extension",
         "store_url": "https://www.justtrains.net/product/western-mainlines-oxford-bicester-extension",
         "routes": ["CWVL"]
+    },
+    {
+        "id": "jt_chiltern_mainline",
+        "name": "Chiltern Mainline",
+        "store_url": "https://www.justtrains.net/product/chiltern-main-line-london-birmingham",
+        "routes": ["CHILT"]
+    },
+    {
+        "id": "jt_chiltern_mainline_aylesbury",
+        "name": "Chiltern Mainline Aylesbury Extension",
+        "store_url": "https://www.justtrains.net/product/chiltern-main-line-london-aylesbury-extension",
+        "routes": ["CHILT"]
+    },
+    {
+        "id": "jt_wessex_mainline",
+        "name": "Wessex Mainline Extension Southampton to Salisbury",
+        "store_url": "https://www.justtrains.net/product/wessex-main-line-southampton-salisbury-extension",
+        "routes": ["WSX"]
     }
   ]
 }

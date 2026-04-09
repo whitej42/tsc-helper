@@ -1,0 +1,16 @@
+{
+  "alan_thomson": [
+        {
+        "id": "ats_chat_moss",
+        "name": "Liverpool to Manchester via Chat Moss",
+        "store_url": "https://alanthomsonsim.com/product/ats-chat-moss-manchester-stations-to-liverpool-lime-street-via-the-chat-moss",
+        "routes": ["LMLCM"]
+        },
+        {
+            "id": "ats_midland_mainline",
+            "name": "Bitton Line",
+            "store_url": "https://alanthomsonsim.com/product/alan-thomson-simulation-bittern-line",
+            "routes": ["BITL"]
+        }
+    ]
+}

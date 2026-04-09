@@ -1,15 +1,11 @@
 import stationsData from '../../../data/stations.json';
-import dtgPacksData from '../../../data/dlc_packs/dtg.json';
-import jtPacksData from '../../../data/dlc_packs/jt.json';
 
 // Build station lookup: CRS code → station object
 export const stationLookup = new Map(stationsData.map(s => [s.crsCode, s]));
 
 // All packs from every publisher, normalised to a flat array
-const allPacks = [
-    ...(dtgPacksData.dovetail_games ?? []),
-    ...(jtPacksData.just_trains ?? []),
-];
+const packFiles = require.context('../../../data/dlc_packs', false, /\.json$/);
+const allPacks = packFiles.keys().flatMap(key => Object.values(packFiles(key)).flat());
 
 // Build DLC pack lookup: route abbreviation → packs[] (deduplicated by id)
 export const dlcByRoute = new Map();

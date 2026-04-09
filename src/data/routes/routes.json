@@ -21,6 +21,29 @@
       }
     ]
   },
+    {
+    "lineName": "WCML",
+    "abbreviation": "WCML",
+    "lines": [
+      {
+        "name": "West Coast Main Line",
+        "color": "#08524b",
+        "stations": ["EUS","WMB","BSH","WFJ","KGL","APS","HML","BKM","TRI","CED","LBZ","BLY","MKC","WOL","RUG","NUN","ATH","PSW","TAM","LTV","RGL","STA","CRE","WBQ","WGN","PRE","LAN","OXN","PNR","CAR","LOC","CRS","MTH","GLC"]
+      },
+      {
+        "name": "Birmingham Branch",
+        "color": "#08524b",
+        "stations": ["COV","CNL","THL","BKW","HIA","BHI","MGN","LEH","SCF","ADD","BHM"],
+        "branchFrom": "RUG"
+      },
+      {
+        "name": "Manchester Branch",
+        "color": "#08524b",
+        "stations": ["HYM","EDB"],
+        "branchFrom": "CRS"
+      }
+    ]
+  },
   {
     "lineName": "Midland Main Line South",
     "abbreviation": "MMLS",
@@ -29,6 +52,35 @@
         "name": "Midland Main Line South",
         "color": "#e950bb",
         "stations": ["STP","KTN","WHP","CRI","HEN","MIL","ELS","RDT","SAC","HPD","LTN","LUT","LEA","HLN","FLT","BDM"]
+      }
+    ]
+  },
+  {
+    "lineName": "Midland Main Line",
+    "abbreviation": "MML",
+    "lines": [
+      {
+        "name": "Midland Main Line",
+        "color": "#713563",
+        "stations": ["BDM","WEL","KET","MHR","LEI","SYS","SIL","BWS","LBO","EMD","ILN","LGM","ALF","CHD","DRO","DOR","SHF"]
+      },
+      {
+        "name": "Nottingham - Lincoln Branch",
+        "color": "#713563",
+        "stations": ["ATB","BEE","NOT","CTO","BUJ","LOW","THU","BSB","FSK","ROL","NCT","CLM","SWD","HKM","LCN"],
+        "branchFrom": "EMD"
+      },
+      {
+          "name": "Derby Branch",
+          "color": "#713563",
+          "stations": ["LGE","SPO","DBY","DFI","BLP","AMB","CHD"],
+          "branchFrom": "EMD"
+      },
+      {
+        "name": "Matlock Branch",
+        "color": "#713563",
+        "stations": ["BLP","AMB","WTS","CMF","MTB","MAT"],
+        "branchFrom": "DFI"
       }
     ]
   },
@@ -86,7 +138,7 @@
       {
         "name": "Great Eastern Main Line",
         "color": "#C8102E",
-        "stations": ["LST","SRA","MYL","FOG","MNP","IFD","SVK","GMY","CTH","RMF","GDP","HRO","BRE","SNF","INT","CHM","HAP","WTM","KEL","MKT","COL","MNG","IPS"]
+        "stations": ["LST","SRA","MYL","FOG","MNP","IFD","SVK","GMY","CTH","RMF","GDP","HRO","BRE","SNF","INT","CHM","HAP","WTM","KEL","MKT","COL","MNG","IPS","NMT","SMK","DIS","NRW"]
       },
       {
         "name": "Braintree Branch",
@@ -109,17 +161,40 @@
     ]
   },
   {
+    "lineName": "Wherry Lines",
+    "abbreviation": "WHYL",
+    "lines": [
+      {
+          "name": "Lowesoft Branch",
+          "color": "#C8102E",
+          "stations": ["NRW","BGA","BDA","BUC","CNY","REE","HAD","SYT","OUN","LWT"]
+      },
+      {
+          "name": "Great Yarmouth Branch",
+          "color": "#C8102E",
+          "stations": ["LGD","ACL","GYM"],
+          "branchFrom": "BDA"
+      },
+      {
+          "name": "Berney Arms Branch",
+          "color": "#C8102E",
+          "stations": ["BYA","GYM"],
+          "branchFrom": "REE"
+      }
+    ]
+  },
+  {
     "lineName": "Portsmouth Direct Line",
     "abbreviation": "PDL",
     "lines": [
       {
         "name": "Portsmouth Direct Line",
-        "color": "#7c3aed",
+        "color": "#0796c9",
         "stations": ["WAT","VXH","QRB","CLJ","EAD","WIM","RAY","NEM","BRS","SUR","ESH","HER","WAL","BFN","WBY","WOK","WPL","GLD","FNC","GOD","MLF","WTY","HSL","LIP","LIS","PTR","RLN","HAV","BDH","HLS","FTN","PMS","PMH"]
       },
       {
         "name": "Hampton Court Branch",
-        "color": "#7c3aed",
+        "color": "#0796c9",
         "stations": ["THD","HMC"],
         "branchFrom": "SUR"
       }
@@ -133,28 +208,6 @@
         "name": "Watford DC Line",
         "color": "#ffa600",
         "stations": ["EUS","SOH","KBN","QPW","KNL","WIJ","HDN","SBP","WMB","NWB","SOK","KNT","HRW","HDL","HTE","CPK","BSH","WFH","WFJ"]
-      }
-    ]
-  },
-  {
-    "lineName": "WCML South",
-    "abbreviation": "WCMLS",
-    "lines": [
-      {
-        "name": "West Coast Main Line South",
-        "color": "#08524b",
-        "stations": ["EUS","WMB","BSH","WFJ","KGL","APS","HML","BKM","TRI","CED","LBZ","BLY","MKC","WOL","RUG","COV","CNL","THL","BKW","HIA","BHI","MGN","LEH","SCF","ADD","BHM"]
-      }
-    ]
-  },
-  {
-    "lineName": "WCML Trent Valley Line",
-    "abbreviation": "WCMLTV",
-    "lines": [
-      {
-        "name": "WCML Trent Valley Line",
-        "color": "#08524b",
-        "stations": ["RUG","NUN","ATH","PSW","TAM","LTV","RGL","STA"]
       }
     ]
   },
@@ -248,8 +301,8 @@
       {
         "name": "Salisbury Extension",
         "color": "#08473c",
-        "stations": ["SOU","MBK","RDB","ROM","DBG","DEN","SAL"],
-        "branchFrom": "SOU"
+        "stations": ["ESL","SOA","SWG","SDN","SOU","MBK","RDB","ROM","DBG","DEN","SAL"],
+        "branchFrom": "ESL"
       }
     ]
   },
@@ -272,7 +325,7 @@
   },
   {
     "lineName": "Welsh Marshes Line",
-    "abbreviation": "WML",
+    "abbreviation": "WMSL",
     "lines": [
       {
         "name": "Welsh Marshes Line",
@@ -387,6 +440,112 @@
         "color": "#273566",
         "stations": ["EDB","HYM","SGL","EGY","DAM","NQU","INK","DAG","AUR","BTS","KGH","KDY","GLT","CDD","LCG","COW","DFL","DFE","ROS","INK"]
      }
+    ]
+  },
+  {
+    "lineName": "North Wales Main Line",
+    "abbreviation": "NWML",
+    "lines": [
+      {
+        "name": "North Wales Main Line",
+        "color": "#f94c25",
+        "stations": ["CRE","CTR","SHT","FLN","PRT","RHL","AGL","CWB","LLJ","CNW","PMW","LLF","BNG","LPG","BOR","TYC","RHO","VAL","HHD"]
+     }
+    ]
+  },
+  {
+    "lineName": "Liverpool to Manchester Line via Warrington",
+    "abbreviation": "LMLW",
+    "lines": [
+      {
+        "name": "Liverpool to Manchester Line via Warrington",
+        "color": "#2a3664",
+        "stations": ["LIV","EDG","MSH","WSA","LPY","HNX","HED","HGN","WID","SNK","WAW","WAC","PDG","BWD","GLZ","IRL","FLI","CSR","URM","HUP","TRA","MUF","DGT","MCO","MAN"]
+     }
+    ]
+  },
+  {
+    "lineName": "Liverpool to Manchester Line via Chat Moss",
+    "abbreviation": "LMLCM",
+    "lines": [
+      {
+        "name": "Liverpool to Manchester Line via Chat Moss",
+        "color": "#2a3664",
+        "stations": ["LIV","EDG","WAV","BGE","ROB","HUY","WHN","RNH","LEG","SHJ","ERL","NLW","PAT","ECC","SFD","MCV"]
+      },
+      {
+        "name": "Manchester Piccadilly Branch",
+        "color": "#2a3664",
+        "stations": ["DGT","MCO","MAN","ADK"],
+        "branchFrom": "ECC"
+      }
+    ]
+  },
+  {
+    "lineName": "Bitten Line",
+    "abbreviation": "BITL",
+    "lines": [
+        {
+          "name": "Bitten Line",
+          "color": "#C8102E",
+          "stations": ["NRW","SAH","HXM","WRT","NWA","GNT","RNR","WRN","SHM"]
+      }
+    ]
+  },
+  {
+    "lineName": "Tarka Line",
+    "abbreviation": "TARKA",
+    "lines": [
+      {
+        "name": "Tarka Line",
+        "color": "#08473c",
+        "stations": ["EXD","NTC","CDI","YEO","COP","MRD","LAP","EGG","KGN","PMA","UMB","CPN","BNP"]
+      }
+    ]
+  },
+  {
+    "lineName": "Medway Valley Lines",
+    "abbreviation": "MEDW",
+    "lines": [
+      {
+        "name": "Medway Valley Lines",
+        "color": "#242b57",
+        "stations": ["SOO","CUX","HAI","SDA","NHE","AYL","BMG","EFL","WTR","YAL","BEG","PDW","TON"]
+      }
+    ]
+  },
+  {
+    "lineName": "Island Line",
+    "abbreviation": "IOWL",
+    "lines": [
+        {
+          "name": "Island Line",
+          "color": "#0796c9",
+          "stations": ["SHN","LKE","SAN","BDN","SAB","RYR","RYD","RYP"]
+        }
+     ]
+  },
+  {
+    "lineName": "Chiltern Main Line",
+    "abbreviation": "CHILT",
+    "lines": [
+      {
+        "name": "Chiltern Main Line",
+        "color": "#3273a6",
+        "stations": ["MYB","WCX","SUD","SDH","NLT","SRU","WRU","DNM","DGC","GER","SRG","BCF","HWY","SDR","PRR","HDM","BCS","KGS","BAN","LMS","WRW","WRP","HTN","LPW","DDG","WMR","SOL","OLT","ACG","TYS","SMA","BBS","BMO"]
+      },
+      {
+          "name": "Aylesbury Branch",
+          "color": "#3273a6",
+          "stations": ["HOH","RIC","CLW","CFO","AMR","GMN","WND","SKM","AYS","AVP"],
+          "branchFrom": "MYB"
+      },
+      {
+          "name": "Aylesbury Branch via Princes Risborough",
+          "color": "#3273a6",
+          "stations": ["MRS","LTK","SKM","AYS"],
+          "branchFrom": "PRR"
+      }
     ]
   }
 ]

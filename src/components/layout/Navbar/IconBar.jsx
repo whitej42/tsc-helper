@@ -1,4 +1,4 @@
-import { FaInstagram, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaSteam } from "react-icons/fa";
 
 function IconBar() {
     return (
@@ -25,6 +25,17 @@ function IconBar() {
                         className="flex items-center justify-center w-9 h-9 text-white/60 hover:text-white hover:bg-white/10 rounded-rail text-lg transition-colors"
                     >
                         <FaGithub />
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://steamcommunity.com/profiles/76561198061381738/myworkshopfiles/?appid=24010"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Steam"
+                        className="flex items-center justify-center w-9 h-9 text-white/60 hover:text-white hover:bg-white/10 rounded-rail text-lg transition-colors"
+                    >
+                        <FaSteam />
                     </a>
                 </li>
             </ul>
