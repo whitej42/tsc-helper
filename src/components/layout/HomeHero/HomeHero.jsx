@@ -58,7 +58,7 @@ function HomeHero() {
                 </div>
                 <Link
                     to="/about"
-                    className="text-xs text-white/30 hover:text-white/60 transition-colors font-rail tracking-rail uppercase"
+                    className="text-xs font-bold text-white/30 hover:text-white/60 transition-colors font-rail tracking-rail uppercase"
                 >
                     About this site
                 </Link>

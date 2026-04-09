@@ -35,7 +35,7 @@ function App() {
         <Navbar isDark={isDark} toggleTheme={() => setIsDark(d => !d)} />
 
         {/* Offset for fixed navbar */}
-        <main className="flex-1 flex flex-col pt-14">
+        <main className="flex-1 flex flex-col pt-20">
           {/* <div className="w-full max-w-4xl mx-auto px-4 py-3">
             <div className="bg-rail-red/10 border border-rail-red/30 text-rail-red dark:bg-rail-red/20 dark:border-rail-red/50 dark:text-red-300 rounded-card px-4 py-2 text-sm font-semibold text-center tracking-rail">
               This site is still under development — some features may not work as expected.
