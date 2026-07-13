@@ -27,7 +27,8 @@ defaults:
 
 env:
   # --- AWS auth (via OIDC role assumption — no static keys) ---
-  AWS_REGION: ${{ vars.AWS_REGION }}
+  # Falls back to eu-west-2 if the AWS_REGION repo variable isn't set.
+  AWS_REGION: ${{ vars.AWS_REGION || 'eu-west-2' }}
   AWS_ROLE_TO_ASSUME: ${{ vars.AWS_ROLE_TO_ASSUME }}
 
   # --- Remote state backend (set as repo/environment variables) ---
@@ -37,7 +38,7 @@ env:
   TF_BACKEND_DYNAMODB_TABLE: ${{ vars.TF_BACKEND_DYNAMODB_TABLE }}
 
   # --- Terraform input variables (TF_VAR_* maps to var.* automatically) ---
-  TF_VAR_aws_region: ${{ vars.AWS_REGION }}
+  TF_VAR_aws_region: ${{ vars.AWS_REGION || 'eu-west-2' }}
   TF_VAR_project: ${{ vars.TF_VAR_PROJECT }}
   TF_VAR_environment: ${{ vars.TF_VAR_ENVIRONMENT }}
   TF_VAR_bucket_name: ${{ vars.TF_VAR_BUCKET_NAME }}
@@ -57,10 +58,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configure AWS credentials (OIDC)
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v5
         with:
           role-to-assume: ${{ env.AWS_ROLE_TO_ASSUME }}
           aws-region: ${{ env.AWS_REGION }}
