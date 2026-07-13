@@ -21,10 +21,6 @@ locals {
   )
 }
 
-resource "random_id" "suffix" {
-  byte_length = 4
-}
-
 # --- S3 bucket (app static assets; private, served only through CloudFront) --
 
 resource "aws_s3_bucket" "assets" {
@@ -111,7 +107,7 @@ data "aws_cloudfront_cache_policy" "optimized" {
 
 resource "aws_cloudfront_distribution" "assets" {
   enabled         = true
-  comment         = "${local.name} assets assets"
+  comment         = "${local.name} app assets"
   price_class     = var.price_class
   is_ipv6_enabled = true
   http_version    = "http2and3"

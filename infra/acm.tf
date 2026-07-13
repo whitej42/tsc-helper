@@ -15,7 +15,7 @@ locals {
   auto_validate      = local.manage_certificate && var.route53_zone_id != ""
 }
 
-resource "aws_acm_certificate" "hero" {
+resource "aws_acm_certificate" "assets" {
   count    = local.manage_certificate ? 1 : 0
   provider = aws.us_east_1
 
@@ -34,7 +34,7 @@ resource "aws_acm_certificate" "hero" {
 
 resource "aws_route53_record" "acm_validation" {
   for_each = local.auto_validate ? {
-    for dvo in aws_acm_certificate.hero[0].domain_validation_options : dvo.domain_name => {
+    for dvo in aws_acm_certificate.assets[0].domain_validation_options : dvo.domain_name => {
       name   = dvo.resource_record_name
       type   = dvo.resource_record_type
       record = dvo.resource_record_value
@@ -49,10 +49,10 @@ resource "aws_route53_record" "acm_validation" {
   allow_overwrite = true
 }
 
-resource "aws_acm_certificate_validation" "hero" {
+resource "aws_acm_certificate_validation" "assets" {
   count    = local.auto_validate ? 1 : 0
   provider = aws.us_east_1
 
-  certificate_arn         = aws_acm_certificate.hero[0].arn
+  certificate_arn         = aws_acm_certificate.assets[0].arn
   validation_record_fqdns = [for r in aws_route53_record.acm_validation : r.fqdn]
 }
