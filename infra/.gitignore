@@ -1,0 +1,18 @@
+# Local Terraform state, plans and provider binaries
+# NB: .terraform.lock.hcl is intentionally committed for reproducible builds.
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Variable files that may contain account-specific / sensitive values.
+# terraform.tfvars is intentionally committed here (hobby use, no secrets in it).
+*.auto.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Saved plan output
+tfplan
